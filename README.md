@@ -10,6 +10,9 @@ The current implementation has a URL encoding issue that causes the following er
 traces export: parse "https://otlp-gateway-prod-eu-west-2.grafana.net%2Fotlp/v1/traces": invalid URL escape "%2F"
 ```
 
+<img width="958" height="109" alt="Screenshot 2025-08-12 at 5 23 37 PM" src="https://github.com/user-attachments/assets/ab269412-5c9f-42e4-a733-d2306e2ab13e" />
+
+
 ### Root Cause
 
 The issue is in the `main.go` file where the endpoint URL is incorrectly formatted:
