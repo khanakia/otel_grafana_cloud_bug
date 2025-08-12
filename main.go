@@ -25,9 +25,9 @@ func main() {
 func newTracerProvider() (*trace.TracerProvider, error) {
 
 	options := []otlptracehttp.Option{
-		otlptracehttp.WithEndpoint("https://otlp-gateway-prod-eu-west-2.grafana.net/otlp/v1/traces"),
+		otlptracehttp.WithEndpoint("otlp-gateway-prod-eu-west-2.grafana.net/otlp"),
 		otlptracehttp.WithHeaders(map[string]string{
-			"authorization": "Bearer YOUR_API_KEY_HERE", // Replace with your actual API key
+			"authorization": "xxx=", // Replace with your actual API key
 		}),
 	}
 
